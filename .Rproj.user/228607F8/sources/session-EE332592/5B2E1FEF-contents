@@ -1,0 +1,9 @@
+name: "Sales"
+output_dir: docs
+navbar:
+  title: "Sales"
+  left:
+    - text: "Forecast"
+      href: index.html
+    - text: "Category"
+      href: about.html
