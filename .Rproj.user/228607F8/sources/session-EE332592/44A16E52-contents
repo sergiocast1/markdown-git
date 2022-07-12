@@ -2,12 +2,13 @@
 title: "Sales Forecast"
 ---
 
-```{r setuup, include=FALSE}
+
+```{r setup, include=FALSE}
 library(plotly)
 ```
 
-```{r setup, include=FALSE}
-df = read.csv('https://github.com/sergiocast1/markdown-git/blob/master/coffee-flavors.csv')
+```{r}
+df = read.csv('https://raw.githubusercontent.com/sergiocast1/markdown-git/master/coffee-flavors.csv')
 fig <- plot_ly()
 fig <- fig %>% add_trace(
   type='sunburst',
@@ -18,11 +19,5 @@ fig <- fig %>% add_trace(
   maxdepth=2,
   insidetextorientation='radial'
 )
-```
-
-```{r}
 fig
 ```
-
-
-
