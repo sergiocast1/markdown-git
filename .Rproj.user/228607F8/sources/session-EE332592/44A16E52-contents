@@ -7,7 +7,7 @@ library(plotly)
 ```
 
 ```{r setup, include=FALSE}
-df = read.csv('https://raw.githubusercontent.com/plotly/datasets/718417069ead87650b90472464c7565dc8c2cb1c/coffee-flavors.csv')
+df = read.csv('https://github.com/sergiocast1/markdown-git/blob/master/coffee-flavors.csv')
 fig <- plot_ly()
 fig <- fig %>% add_trace(
   type='sunburst',
